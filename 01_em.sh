@@ -4,7 +4,7 @@
 ## #$ -l h_rt=00:10:00
 ## #$ -l q_node=1
 ## ##$ -g hp230064
-## #$ -N metad
+## #$ -N system_prep
 set -eu 
 . /etc/profile.d/modules.sh
 module load cuda/11.2.146
@@ -16,8 +16,6 @@ export CC=`which gcc`
 export CXX=`which g++`
 . ~/.bashrc
 
-# export PATH=/gs/hs1/hp230064/siida/software/gro-plumed/build/bin:$PATH
-# export LD_LIBRARY_PATH=/gs/hs1/hp230064/siida/software/gro-plumed/build/lib:$LD_LIBRARY_PATH
 export PATH=/gs/hs1/hp230064/siida/software/gromacs-2022.5-plumed-2.8.3/build/bin:$PATH
 export LD_LIBRARY_PATH=/gs/hs1/hp230064/siida/software/gromacs-2022.5-plumed-2.8.3/build/lib:$LD_LIBRARY_PATH
 
