@@ -31,5 +31,5 @@ ${GMX} grompp -f inputs/nvt.mdp \
 	      -po mdout_nvt.mdp \
 	      -o metad.tpr
 
-${GMX} mdrun -deffnm metad -s metad.tpr -plumed inputs/plumed.dat -nsteps 50000000 
+${GMX} mdrun -deffnm metad -s metad.tpr -plumed inputs/plumed.dat
 
